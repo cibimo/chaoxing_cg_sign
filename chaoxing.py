@@ -259,6 +259,7 @@ class ChaoXing:
                             signTmp.append(item['id'])
 
                 elif int(item['otherId']) == 4: # 位置签到
+                    havePosInfo = False
                     try:
                         ifopenAddress = re.findall(r'<input type="hidden" id="ifopenAddress" value="(.*?)">', preSign)[0]
                         locationText = re.findall(r'<input type="hidden" id="locationText" value="(.*?)">', preSign)[0]
@@ -272,12 +273,20 @@ class ChaoXing:
                         logger.debug(f"LocationLongitude: {locationLongitude}")
                         logger.debug(f"LocationRange: {locationRange}")
 
+                        havePosInfo = True
                     except:
                         pass
 
                     url = f"https://mobilelearn.chaoxing.com/pptSign/stuSignajax?name={self.name}&address={pos['address']}&activeId={item['id']}&uid={self.cookies['UID']}&clientip=&latitude={pos['lat']}&longitude={pos['lon']}&fid={self.cookies['fid']}&appType=15&ifTiJiao=1"
                     res = self.session.get(url, headers=headers)
                     logger.info(f"stuSignajax {res.text}")
+
+                    if "不在可签到范围内" in res.text and havePosInfo:
+                        logger.info(f"预定位置签到失败，获取签到位置进行签到")
+                        url = f"https://mobilelearn.chaoxing.com/pptSign/stuSignajax?name={self.name}&address={locationText}&activeId={item['id']}&uid={self.cookies['UID']}&clientip=&latitude={locationLatitude}&longitude={locationLongitude}&fid={self.cookies['fid']}&appType=15&ifTiJiao=1"
+                        res = self.session.get(url, headers=headers)
+                        logger.info(f"stuSignajax {res.text}")
+
                     if res.text == "success" or res.text == "您已签到过了":
                         signTmp.append(item['id'])
                         self.addResult(item, result, "位置签到 已签到")
