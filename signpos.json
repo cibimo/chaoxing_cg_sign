@@ -1,0 +1,27 @@
+{
+    "北B": {
+        "address": "地址名称",
+        "lat": 都懂 float,
+        "lon": 都懂 float
+    },
+    "物理楼": {
+        "address": "地址名称",
+        "lat": 都懂 float,
+        "lon": 都懂 float
+    },
+    "南C": {
+        "address": "地址名称",
+        "lat": 都懂 float,
+        "lon": 都懂 float
+    },
+    "图书馆": {
+        "address": "地址名称",
+        "lat": 都懂 float,
+        "lon": 都懂 float
+    },
+    "北A": {
+        "address": "地址名称",
+        "lat": 都懂 float,
+        "lon": 都懂 float
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "毛泽东思想和中国特色社会主义理论体系概论": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 0,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "北A"
+    },
+    "形势与政策4": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 0,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "南C"
+    },
+    "汇编语言": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 1,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "北B"
+    },
+    "计算机组成原理": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 1,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "北B"
+    },
+    "操作系统": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 0,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "物理楼"
+    },
+    "网络程序设计（JSP）实践": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 1,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "物理楼"
+    },
+    "实用数据库技术": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 1,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "北B"
+    },
+    "算法设计与分析": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 0,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "南C"
+    },
+    "实用数据库技术实践": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 0,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "图书馆"
+    },
+    "网络程序设计（JSP）": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 1,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "图书馆"
+    },
+    "计算机组成原理课程设计": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 0,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "物理楼"
+    },
+    "操作系统课程设计": {
+        "teacher": 没啥用 str,
+        "position": 没啥用 str,
+        "signmode": 0,
+        "courseid": 超星课程号 int,
+        "classid": 超星班级号 int,
+        "signpos": "物理楼"
+    }
+}
